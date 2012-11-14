@@ -19,6 +19,6 @@ def sendRandomWikipediaArticleTo(to_addr):
 		data = getRandomArticleData()
 		subject = 'Daily Random Wikipedia Article: \"' + data['title'] + '\"'
 		body = data['info'].decode('UTF-8') + '\n\nFor more information go to: ' + data['url']
-		body += '\nTo unsubscribe, click <a href=http://random-wiki.appspot.com/unsubscribe?email=' + to_addr
+		body += '\nTo unsubscribe, go to http://random-wiki.appspot.com/unsubscribe?email=' + to_addr
 
 		mail.send_mail(from_addr, to_addr, subject, body)

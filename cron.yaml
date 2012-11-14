@@ -1,0 +1,5 @@
+cron:
+- description: daily random article
+  url: /mail/daily
+  schedule: every day 05:00
+  timezone: America/New_York

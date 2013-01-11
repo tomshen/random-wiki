@@ -6,6 +6,7 @@
 
 html, body {
 	height: 100%;
+	overflow: hidden;
 }
 
 html { 
@@ -31,18 +32,19 @@ ul{
 }
 strong{
 	color: #FF0066;
+	cursor: pointer;
 }
 
 fieldset{
 	border: none;
 	box-shadow: none;
+	padding:0px;
 }
 
 
 form{
 	color:#222;
 	font-size: 0.8em;
-	margin-left: 0%;
 }
 label{
 	line-height: 0em;
@@ -58,34 +60,39 @@ div.entryBox{
 	opacity: 0.9;
 	background: white;
 	border: solid 1px #888;
-	margin-top: 10%;
+	margin-top: 8%;
 	margin-left: 30%;
 	margin-right: 30%;
 	padding-top: 1em;
-	padding-bottom: 4.7em;
+	padding-bottom: 2em;
 	text-align: center;
 	border-radius: 1em;
 	box-shadow: 0px 0px 10px #000;
 }
 
-div.signup{
-	padding-left:18%;
-	padding-right:18%;
-}
 
 .footer, .push {
 	height: 2em;
 	text-align: center;
 }
 #signup-button{
-		background-color: #0066FF;
-		border-radius: 2em;
-		color: white;
+	padding: 0.2 .3em;
+	margin:0px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 1.5em;
+	color: #FFA500;
+	border: solid 0.3em;
+	display:inline-block;
 }
 #signup-button:hover{
-		background-color: #0026FF;
-		border-radius: 2em;
-		color: white;
+	color: #FFB833;
+}
+#signup-email{
+	font-size: 1.5em;
+	margin:0px;
+	margin-bottom:.3em;
+	box-shadow: 0px 0px 10px black;
+	display:inline-block;
 }
 .footer{
 	margin-left: 20%;
@@ -126,12 +133,7 @@ h2{
 .instruct{
 	float: left;
 }
-h3{
-	float: right;
-	padding: .2em;
-	padding-left: .3em;
-	padding-right: .3em;
-	font-family: 'Open Sans Condensed', sans-serif;
-	color: orange;
-	border: solid 0.3em;
+
+div.signup p{
+	margin: 2em;
 }

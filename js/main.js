@@ -4,6 +4,8 @@ function isValidEmailAddress(emailAddress) {
     return pattern.test(emailAddress);
 };
 
+
+
 $(document).ready(function(){
 	$(function() {
         $('#signup-box').submit(function(e) {
@@ -18,5 +20,16 @@ $(document).ready(function(){
             $('#signup-box').submit()
             return true;
         });
+    });
 });
-});
+
+words = []
+words.push(["sagacious", "intelligent", "cosmopolitan", "smart", "clever"]);
+words.push(["envy", "admiration", "lust"]);
+words.push(["Win", "Succeed", "Be the best", "Pwn"]);
+
+var newWord = function(n){
+    var old = $("#word_" + n).html();
+    var oldIndex = words[n].indexOf(old);
+    $("#word_" + n).html(words[n][(oldIndex+1)%words[n].length]);
+};

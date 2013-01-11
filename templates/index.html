@@ -5,6 +5,7 @@
 		<title>Daily Random Wikipedia Article</title>
 		<link rel="stylesheet" href="css/style.css">
 		<script src="js/jquery-1.8.2.min.js"></script>
+		<script src="js/main.js"></script>
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
 
 	</head>
@@ -15,17 +16,16 @@
 				<h2>*Random*<h2>
 				<h1>Daily Wikipedia</h1><br>
 				<ul>
-					<li>Become more <strong>sagacious</strong>!</li>
-					<li>Feel the <strong>envy</strong> of your friends!</li>
-					<li><strong>Win</strong> at life!</li>
+					<li>Get an article every day!</li>
+					<li>Be <strong id="word_0" onclick="newWord(0)">sagacious</strong>!</li>
+					<li>Feel the <strong id="word_1"  onclick="newWord(1)">envy</strong> of your friends!</li>
+					<li><strong id="word_2"  onclick="newWord(2)">Win</strong> at life!</li>
 				</ul><br>
 				<div class = "signup">
-					<div class = "instruct"><h3> Sign Up!</h3></div>
 					<form id="signup-box" action="/subscribe" method="post">
 						<fieldset>
-							<label for="signup-email">Receive a random Wikipedia article daily:</label>  <br>
-							<input type="email" name="signup-email" id="signup-email" name="signup-email">
-							<input type="submit" id="signup-button" value="Subscribe">
+							<input type="email" placeholder="E-mail Address" name="signup-email" id="signup-email" name="signup-email"><br>
+							<input class="sign_up" type="submit" id="signup-button" value="Sign Up">
 							<p id="signup-response"></p> 
 						</fieldset>
 					</form>
@@ -33,7 +33,7 @@
 			</div>
         </div>
         <div class="footer">
-            <p>Copyright (c) 2012 * Taylor Poulos and <a href = "http://www.tomzshen.com"> Tom Shen </a> * photo credit <a href = "http://bit.ly/9FT3Ju"> See-ming Lee </a> </p>
+            <p>Copyright (c) 2012 * <a href = 'http://www.tpoulos.me'>Taylor Poulos</a> and <a href = "http://www.tomzshen.com"> Tom Shen </a> * photo credit <a href = "http://bit.ly/9FT3Ju"> See-ming Lee </a> </p>
         </div>
     </body>
 </html>
